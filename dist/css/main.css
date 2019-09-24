@@ -56,14 +56,14 @@
       width: 250px;
       height: 250px;
       border-radius: 50%;
-      border: solid 3px #1e509b; }
+      border: solid 3px #1572a8; }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);
     transition: all 0.3s ease-in; }
     .menu .nav-item.show {
       transform: translate3d(0, 0, 0); }
     .menu .nav-item.current > a {
-      color: #1e509b; }
+      color: #1572a8; }
   .menu .nav-link {
     display: inline-block;
     position: relative;
@@ -75,7 +75,7 @@
     text-decoration: none;
     transition: all 0.2s ease-in; }
     .menu .nav-link:hover {
-      color: #1e509b; }
+      color: #1572a8; }
 
 .nav-item:nth-child(1) {
   transition-delay: 0.1s; }
@@ -100,11 +100,10 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5; }
   body#bg-img {
-    background: url("../img/background_06.jpg");
-    background-attachment: fixed; }
+    background: url("../img/background_09.jpg"); }
     body#bg-img:after {
       content: " ";
-      position: absolute;
+      position: fixed;
       top: 0;
       right: 0;
       width: 100%;
@@ -138,17 +137,20 @@ header {
   width: 100%; }
 
 .text-secondary {
-  color: #1e509b; }
+  color: #1572a8; }
 
 main {
   padding: 4rem;
-  min-height: calc(100vh-60px); }
+  min-height: calc(100vh-60px);
+  margin: auto;
+  overflow: auto;
+  padding-bottom: 60px; }
   main .icons {
     margin-top: 1rem; }
     main .icons a {
       padding: 0.4rem; }
       main .icons a:hover {
-        color: #1e509b;
+        color: #1572a8;
         transition: all 0.2s ease-in; }
   main#home {
     overflow: hidden; }
@@ -164,7 +166,7 @@ main {
     grid-area: bioimage;
     margin: auto;
     border-radius: 50%;
-    border: #1e509b 3px solid; }
+    border: #1572a8 3px solid; }
   .about-info .bio {
     grid-area: bio;
     font-size: 1.5rem; }
@@ -177,7 +179,7 @@ main {
   .about-info .job {
     background: #bcbcbc;
     padding: 0.5rem;
-    border-bottom: #1e509b 5px solid; }
+    border-bottom: #1572a8 5px solid; }
 
 .projects {
   display: grid;
@@ -188,8 +190,22 @@ main {
     border: 3px #313131 solid; }
     .projects img:hover {
       opacity: 0.5;
-      border-color: #1e509b;
+      border-color: #1572a8;
       transition: all 0.1s ease-in; }
+
+.summary-container {
+  display: inline-grid;
+  grid-gap: 30px;
+  grid-template-areas: "project-summary-text project-youtube-video" "project-summary-text project-youtube-video";
+  grid-template-columns: repeat(2, 1fr); }
+  .summary-container .project-summary-text {
+    grid-area: project-summary-text;
+    margin: auto;
+    column-span: all; }
+  .summary-container .project-youtube-video {
+    grid-area: project-youtube-video;
+    margin: auto;
+    column-span: all; }
 
 .boxes {
   display: flex;
@@ -205,8 +221,8 @@ main {
     transition: all 0.1s ease-in; }
     .boxes div:hover {
       padding: 0.5rem 1.5rem;
-      background: #1e509b;
-      color: set-text-color(#1e509b); }
+      background: #1572a8;
+      color: set-text-color(#1572a8); }
       .boxes div:hover span {
         color: #313131; }
 
@@ -216,26 +232,26 @@ main {
   border: 0;
   margin-bottom: 0.3rem; }
   .btn:hover, .btn-dark:hover, .btn-light:hover {
-    background: #1e509b;
+    background: #1572a8;
     color: #fff; }
 
 .btn-dark {
   background: #303030;
-  colour: #fff; }
+  color: #fff; }
 
 .btn-light {
   background: white;
-  colour: #333; }
+  color: #333; }
 
 #main-footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
+  position: relative;
+  margin-top: -60px;
+  /* negative value of footer height */
+  height: 60px;
+  clear: both;
   text-align: center;
   padding: 1rem;
-  background: #969696;
-  color: #313131;
-  height: 60px; }
+  background-color: #afafaf; }
 
 @media screen and (min-width: 1171px) {
   .projects {
