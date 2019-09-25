@@ -4,6 +4,7 @@ const menu = document.querySelector(".menu");
 const menuBranding = document.querySelector(".menu-branding");
 const menuNav = document.querySelector(".menu-nav");
 const navItems = document.querySelectorAll(".nav-item");
+const navLinks = document.querySelectorAll(".nav-link");
 
 //Set initial state of menu
 let showMenu = false;
@@ -31,3 +32,30 @@ function toggleMenu() {
     showMenu = false;
   }
 }
+
+$(document).ready(function() {
+  $(navLinks).on("click", function() {
+    $("html, body").animate(
+      {
+        scrollTop: $($(this).attr("href")).offset().top - 100
+      },
+      1000
+    );
+    toggleMenu();
+  });
+
+  $("#up").on("click", function() {
+    $("html, body").animate(
+      {
+        scrollTop: 0
+      },
+      1000
+    );
+  });
+
+  AOS.init({
+    easing: "ease",
+    duration: 1800,
+    once: true
+  });
+});

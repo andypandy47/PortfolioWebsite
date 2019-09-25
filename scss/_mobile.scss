@@ -21,6 +21,7 @@
     .lg-heading {
       line-height: 1;
       margin-bottom: 1rem;
+      font-size: 12rem;
     }
   }
 
@@ -52,7 +53,7 @@
     }
   }
 
-  .about-info {
+  /*.about-info {
     grid-template-areas:
       "bioimage"
       "bio"
@@ -65,16 +66,78 @@
 
   .projects {
     grid-template-columns: repeat(2, 1fr);
+  }*/
+
+  .about-heading {
+    h1 {
+      font-size: 6rem;
+    }
+  }
+
+  .section-heading {
+    font-size: 3rem;
   }
 }
 
 //Phones
 @include mediaSm {
-  main#home h1 {
-    margin-top: 10vh;
+  main {
+    .lg-heading {
+      font-size: 5rem;
+    }
+    .sm-heading {
+      font-size: 1.4rem;
+    }
   }
 
-  .projects {
-    grid-template-columns: repeat(1, 1fr);
+  section {
+    padding: 3rem;
   }
+
+  img {
+    width: 80%;
+  }
+
+  .about {
+    .container {
+      flex-direction: column;
+      .profile-img {
+        margin: 0 0 7rem 0;
+      }
+    }
+  }
+
+  .portfolio-item {
+    flex-direction: column;
+  }
+
+  .porfolio-img {
+    margin: 0 0 2rem 0;
+    order: 1;
+  }
+
+  .portfolio-description {
+    margin: 0;
+    order: 2;
+    p {
+      font-size: 1.5rem;
+    }
+  }
+
+  .menu-btn {
+    //position: fixed;
+    //right: 10rem;
+  }
+
+  form {
+    width: 100%;
+  }
+
+  .up {
+    right: 2rem;
+  }
+
+  /*.projects {
+    grid-template-columns: repeat(1, 1fr);
+  }*/
 }
