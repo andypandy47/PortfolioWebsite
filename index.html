@@ -11,6 +11,7 @@
       integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Welcome to my portfolio!</title>
   </head>
   <body id="bg-img">
@@ -26,48 +27,170 @@
           <div class="portrait"></div>
         </div>
         <ul class="menu-nav">
-          <li class="nav-item current">
-            <a href="/" class="nav-link">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">
               Home
             </a>
           </li>
           <li class="nav-item">
-            <a href="about.html" class="nav-link">
+            <a href="#about" class="nav-link">
               About Me
             </a>
           </li>
           <li class="nav-item">
-            <a href="work.html" class="nav-link">
+            <a href="#work" class="nav-link">
               My Work
             </a>
           </li>
           <li class="nav-item">
-            <a href="contact.html" class="nav-link">
+            <a href="#contact" class="nav-link">
               How To Reach Me
             </a>
           </li>
         </ul>
       </nav>
     </header>
+    <main>
+      <section class="landing-text">
+          <h1 class="lg-heading">Andrew <span class="text-secondary">Kay</span></h1>
+          <h2 class="sm-heading">
+            Devloper, Programmer & Musician
+          </h2>
+          <div class="icons">
+              <a href="#!">
+                <i class="fab fa-twitter fa-4x"> </i>
+              </a>
+              <a href="#!">
+                <i class="fab fa-linkedin fa-4x"> </i>
+              </a>
+              <a href="#!">
+                <i class="fab fa-github fa-4x"> </i>
+              </a>
+          </div>
+          <hr>
+          <div class="scroll-down">
+            <h6>Scroll down</h6>
+            <div class="down-chevron">
+              <i class="fas fa-chevron-up" id="scroll-down-chevron"></i>
+            </div>
+            
+          </div>
+      </section>
+      <section class="about" id="about">
+          <div class="container">
+            <div class="profile-img" data-aos="fade-right" data-aos-delay="300"><img src="img/profile_example.jpg" alt=""></div>
+            <div class="about-details" data-aos="fade-left" data-aos-delay="600">
+              <div class="about-heading">
+                <h1>About</h1>
+                <h6>Myself</h6>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Doloribus veritatis consequatur in debitis accusamus eveniet quam
+                cum explicabo voluptate. Dolorem cumque culpa earum maxime quia
+                est illum beatae quibusdam voluptate.
+              </p>
+            </div>
+          </div>
+      </section>
+        <section class="work" id="work">
+          <div class="container">
+            <div class="section-heading">
+              <h1>Portfolio</h1>
+              <h6>Check out some of my projects...</h6>
+            </div>
+            <div class="portfolio-item">
+                <div class="portfolio-img has-margin-right" data-aos="fade-right" data-aos-delay="300">
+                    <img src="img/Projects/MAXControl.jpg" alt="">
+                  </div>
+                <div class="portfolio-description" data-aos="fade-left" data-aos-delay="600">
+                    <h6>Project topic</h6>
+                    <h1>Project title</h1>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum,
+                      perferendis iste. Sed deserunt expedita at facere consequatur,
+                      voluptatem sapiente perferendis voluptatibus nostrum omnis
+                      quisquam temporibus minus. Ex consectetur fugit iure.
+                    </p>
+                    <div class="view-details">
+                        <a href="" class="details-link">View Details</a>
+                        <a href="" class="github-link">View Github</a>
+                    </div>
+                  </div>
+                  
+              </div>
+              <div class="portfolio-item">
+                  <div class="portfolio-description has-margin-right" data-aos="fade-right" data-aos-delay="900">
+                      <h6>Project topic</h6>
+                      <h1>Project title</h1>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum,
+                        perferendis iste. Sed deserunt expedita at facere consequatur,
+                        voluptatem sapiente perferendis voluptatibus nostrum omnis
+                        quisquam temporibus minus. Ex consectetur fugit iure.
+                      </p>
+                      <div class="view-details">
+                          <a href="" class="details-link">View Details</a>
+                          <a href="" class="github-link">View Github</a>
+                      </div>
+                  </div>
+                  <div class="portfolio-img" data-aos="fade-left" data-aos-delay="1200">
+                      <img src="img/Projects/MAXControl.jpg" alt="">
+                  </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-img has-margin-right" data-aos="fade-right" data-aos-delay="300">
+                        <img src="img/Projects/MAXControl.jpg" alt="">
+                      </div>
+                    <div class="portfolio-description" data-aos="fade-left" data-aos-delay="600">
+                        <h6>Project topic</h6>
+                        <h1>Project title</h1>
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum,
+                          perferendis iste. Sed deserunt expedita at facere consequatur,
+                          voluptatem sapiente perferendis voluptatibus nostrum omnis
+                          quisquam temporibus minus. Ex consectetur fugit iure.
+                        </p>
+                        <div class="view-details">
+                            <a href="" class="details-link">View Details</a>
+                            <a href="" class="github-link">View Github</a>
+                        </div>
+                      </div>
+                  </div>
+        </section>
 
-    <main id="home">
-      <h1 class="lg-heading">Andrew <span class="text-secondary">Kay</span></h1>
-      <h2 class="sm-heading">
-        Devloper, Programmer & Musician
-      </h2>
-      <div class="icons">
-        <a href="#!">
-          <i class="fab fa-twitter fa-2x"> </i>
-        </a>
-        <a href="#!">
-          <i class="fab fa-linkedin fa-2x"> </i>
-        </a>
-        <a href="#!">
-          <i class="fab fa-github fa-2x"> </i>
-        </a>
-      </div>
+        <section class="contact" id="contact">
+          <div class="container">
+            <div class="section-heading">
+              <h1>Contact</h1>
+            </div>
+            <form action="" data-aos="fade-up" data-aos-delay="300">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" placeholder="Enter your name..." required>
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" placeholder="Enter your email..." required>
+              <label for="subject">Subject:</label>
+              <textarea name="subject" id="subject" cols="10" rows="10"></textarea>
+              <input type="submit" value="Submit">
+            </form>
+          </div>
+      </section>
     </main>
 
+
+    <footer class="copyright">
+      <div class="up" id="up">
+        <i class="fas fa-chevron-up"></i>
+      </div>
+      <p>&copy; 2019 Andrew Kay</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    
   </body>
 </html>
