@@ -102,18 +102,24 @@
     .container {
       flex-direction: column;
       .profile-img {
-        margin: 0 0 7rem 0;
+        margin: 0 0 8rem 0;
       }
     }
   }
 
   .portfolio-item {
     flex-direction: column;
+    margin: 0 auto;
   }
 
-  .porfolio-img {
-    margin: 0 0 2rem 0;
+  .portfolio-img {
+    margin: 0 auto 2rem auto;
     order: 1;
+    align-content: center;
+    width: 100%;
+    &.has-margin-right {
+      margin: 0 auto 2rem auto;
+    }
   }
 
   .portfolio-description {
@@ -122,11 +128,40 @@
     p {
       font-size: 1.5rem;
     }
+    &.has-margin-right {
+      margin-right: 0;
+    }
   }
 
   .menu-btn {
-    //position: fixed;
-    //right: 10rem;
+    right: 20px;
+    .btn-line {
+      width: 15px;
+      height: 1.5px;
+      margin: 0 0 3px 0;
+    }
+
+    //Rotate into X with menu lines
+    &.close {
+      transform: rotate(180deg);
+
+      .btn-line {
+        // Line 1 - Rotate
+        &:nth-child(1) {
+          transform: rotate(45deg) translate(3px, 2px);
+        }
+
+        //Line 2 - Hide
+        &:nth-child(2) {
+          opacity: 0;
+        }
+
+        //Line 3 - Rotate
+        &:nth-child(3) {
+          transform: rotate(-45deg) translate(4px, -4px);
+        }
+      }
+    }
   }
 
   form {
