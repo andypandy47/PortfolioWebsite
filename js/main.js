@@ -5,6 +5,7 @@ const menuBranding = document.querySelector(".menu-branding");
 const menuNav = document.querySelector(".menu-nav");
 const navItems = document.querySelectorAll(".nav-item");
 const navLinks = document.querySelectorAll(".nav-link");
+const landingNavLinks = document.querySelectorAll(".landing-nav-link");
 
 //Set initial state of menu
 let showMenu = false;
@@ -37,11 +38,20 @@ $(document).ready(function() {
   $(navLinks).on("click", function() {
     $("html, body").animate(
       {
-        scrollTop: $($(this).attr("href")).offset().top - 100
+        scrollTop: $($(this).attr("href")).offset().top
       },
       1000
     );
     toggleMenu();
+  });
+
+  $(landingNavLinks).on("click", function() {
+    $("html, body").animate(
+      {
+        scrollTop: $($(this).attr("href")).offset().top
+      },
+      1000
+    );
   });
 
   $("#up").on("click", function() {

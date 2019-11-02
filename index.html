@@ -43,6 +43,11 @@
             </a>
           </li>
           <li class="nav-item">
+            <a href="resume.html" class="nav-link">
+              Resume
+            </a>
+          </li>
+          <li class="nav-item">
             <a href="#contact" class="nav-link">
               How To Reach Me
             </a>
@@ -67,113 +72,148 @@
                 <i class="fab fa-github fa-4x"> </i>
               </a>
           </div>
+          <ul class="landing-nav">
+            <li class="nav-item">
+              <a href="#work" class="landing-nav-link">
+                My Work
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="resume.html" class="nav-link">
+                Resume
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="landing-nav-link">
+                About Me
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="landing-nav-link">
+                How To Reach Me
+              </a>
+            </li>
+          </ul>
           <hr>
           <div class="scroll-down">
             <h6>Scroll down</h6>
             <div class="down-chevron">
               <i class="fas fa-chevron-up" id="scroll-down-chevron"></i>
             </div>
-            
           </div>
       </section>
-      <section class="about" id="about">
+     <section class="work" id="work">
           <div class="container">
-            <div class="profile-img" data-aos="fade-right" data-aos-delay="300"><img src="img/profile_example.jpg" alt=""></div>
+            <div class="section-heading">
+              <h1>Portfolio</h1>
+              <h6>Check out some of my projects...</h6>
+            </div>
+
+            <div class="portfolio-item">
+              <div class="portfolio-description has-margin-right" data-aos="fade-right" data-aos-delay="200">
+                  <h6>.Net Core / MVC / SQL</h6>
+                  <h1>Spiralni Shack Co.</h1>
+                  <p>
+                    Currently ongoing, this project is a web application for the fictional company Spiralni Shack.
+                  </p>
+                  <div class="view-details">
+                      <!--<a href="" class="details-link">View Details</a>-->
+                      <a href="https://github.com/andypandy47/SpiralniShackCo" class="github-link">View Github</a>
+                  </div>
+              </div>
+              <div class="portfolio-img" data-aos="fade-left" data-aos-delay="400">
+                  <img src="img/Projects/file-4.jpg" alt="">
+              </div>
+            </div>
+
+            <div class="portfolio-item">
+                <div class="portfolio-img has-margin-right" data-aos="fade-right" data-aos-delay="300">
+                    <img src="img/Projects/MidiFIleReaderUnity.jpg" alt="">
+                  </div>
+                <div class="portfolio-description" data-aos="fade-left" data-aos-delay="600">
+                    <h6>C# / Unity</h6>
+                    <h1>Unity MIDI File Reader</h1>
+                    <p>
+                      The aim of this project was to develop a package file for the Unity game engine that would give developers the ability to utilise data embedded in MIDI files to trigger game events. Programs that allow for the creation and editing of MIDI files, make it easy for users to synchronise events with musical rhythms. Therefore, when utilised in games, MIDI data can make the development of rhythm games like Guitar Hero and Dance Dance Revolution much easier by triggering events to spawn game objects, like the interactable notes for example, in sync with a musical track playing in the background.
+                    </p>
+                    <div class="view-details">
+                        <!--<a href="" class="details-link">View Details</a>-->
+                        <a href="https://github.com/andypandy47/MidiFileReaderPackage" class="github-link">View Github</a>
+                    </div>
+                  </div>  
+              </div>
+
+              <div class="portfolio-item">
+                  <div class="portfolio-description has-margin-right" data-aos="fade-right" data-aos-delay="900">
+                      <h6>C++ / C# / JUCE Framework</h6>
+                      <h1>Unity Synth</h1>
+                      <p>
+                        This project was designed to explore the capabilities of plugins written in C++ for Unity's audio engine. A subtractive synthesiser, a simple reverb and a delay effect was developed in the JUCE framework and exported into an appropriate format to include onto one of Unity's mixer channels. A small application was developed to showcase there use. Simple solar systems are randomly generated, then when the user clicks on each planet or moon, note events are sent to the synthesiser in order to generate audio. A menu was also implemented that allows users to change parameters of the synthesiser and effects showcasing the real time, procedurally generated audio.
+                      </p>
+                      <div class="view-details">
+                          <!--<a href="" class="details-link">View Details</a>-->
+                          <a href="https://github.com/andypandy47/UnitySynthGit" class="github-link">View Github</a>
+                      </div>
+                  </div>
+                  <div class="portfolio-img" data-aos="fade-left" data-aos-delay="1200">
+                      <img src="img/Projects/UnitySynth.jpg" alt="">
+                  </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <div class="portfolio-img has-margin-right" data-aos="fade-right" data-aos-delay="300">
+                        <img src="img/Projects/MAXControl.jpg" alt="">
+                      </div>
+                    <div class="portfolio-description" data-aos="fade-left" data-aos-delay="600">
+                        <h6>C++ / Arduino / MaxMSP</h6>
+                        <h1>Max Control Event</h1>
+                        <p>
+                          Max Control was an event featuring several experimental musical performances that each utilised technology in a different way. My contribution to the event was to create a reactive lighting system in order to add visuals to each performers output. This was done by using several digital LED strips that could be programmed through an arduino module.
+                        </p>
+                        <div class="view-details">
+                            <!--<a href="" class="details-link">View Details</a>-->
+                            <a href="https://github.com/andypandy47/ReactiveLEDLighting" class="github-link">View Github</a>
+                        </div>
+                      </div>
+                  </div>
+
+        </section>
+
+        <hr>
+
+        <section class="about" id="about">
+          <div class="container">
+            <div class="profile-img" data-aos="fade-right" data-aos-delay="300"><img src="img/profile.jpg" alt=""></div>
             <div class="about-details" data-aos="fade-left" data-aos-delay="600">
               <div class="about-heading">
                 <h1>About</h1>
                 <h6>Myself</h6>
               </div>
               <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Doloribus veritatis consequatur in debitis accusamus eveniet quam
-                cum explicabo voluptate. Dolorem cumque culpa earum maxime quia
-                est illum beatae quibusdam voluptate.
+                These past few years I have been teaching myself how to program games, audio plugins, and websites in my spare time whilst also pursuing a master's in sound and music for interactive games. Now that I have finished my course, I am trying to fully dedicate myself to acquiring my first job within the tech industry while also learning as much as I can about full-stack web development.
               </p>
             </div>
           </div>
       </section>
-        <section class="work" id="work">
-          <div class="container">
-            <div class="section-heading">
-              <h1>Portfolio</h1>
-              <h6>Check out some of my projects...</h6>
-            </div>
-            <div class="portfolio-item">
-                <div class="portfolio-img has-margin-right" data-aos="fade-right" data-aos-delay="300">
-                    <img src="img/Projects/MAXControl.jpg" alt="">
-                  </div>
-                <div class="portfolio-description" data-aos="fade-left" data-aos-delay="600">
-                    <h6>Project topic</h6>
-                    <h1>Project title</h1>
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum,
-                      perferendis iste. Sed deserunt expedita at facere consequatur,
-                      voluptatem sapiente perferendis voluptatibus nostrum omnis
-                      quisquam temporibus minus. Ex consectetur fugit iure.
-                    </p>
-                    <div class="view-details">
-                        <a href="" class="details-link">View Details</a>
-                        <a href="" class="github-link">View Github</a>
-                    </div>
-                  </div>
-                  
-              </div>
-              <div class="portfolio-item">
-                  <div class="portfolio-description has-margin-right" data-aos="fade-right" data-aos-delay="900">
-                      <h6>Project topic</h6>
-                      <h1>Project title</h1>
-                      <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum,
-                        perferendis iste. Sed deserunt expedita at facere consequatur,
-                        voluptatem sapiente perferendis voluptatibus nostrum omnis
-                        quisquam temporibus minus. Ex consectetur fugit iure.
-                      </p>
-                      <div class="view-details">
-                          <a href="" class="details-link">View Details</a>
-                          <a href="" class="github-link">View Github</a>
-                      </div>
-                  </div>
-                  <div class="portfolio-img" data-aos="fade-left" data-aos-delay="1200">
-                      <img src="img/Projects/MAXControl.jpg" alt="">
-                  </div>
-                </div>
-                <div class="portfolio-item">
-                    <div class="portfolio-img has-margin-right" data-aos="fade-right" data-aos-delay="300">
-                        <img src="img/Projects/MAXControl.jpg" alt="">
-                      </div>
-                    <div class="portfolio-description" data-aos="fade-left" data-aos-delay="600">
-                        <h6>Project topic</h6>
-                        <h1>Project title</h1>
-                        <p>
-                          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum,
-                          perferendis iste. Sed deserunt expedita at facere consequatur,
-                          voluptatem sapiente perferendis voluptatibus nostrum omnis
-                          quisquam temporibus minus. Ex consectetur fugit iure.
-                        </p>
-                        <div class="view-details">
-                            <a href="" class="details-link">View Details</a>
-                            <a href="" class="github-link">View Github</a>
-                        </div>
-                      </div>
-                  </div>
-        </section>
 
         <section class="contact" id="contact">
           <div class="container">
             <div class="section-heading">
               <h1>Contact</h1>
-            </div>
-            <form action="" data-aos="fade-up" data-aos-delay="300">
-              <label for="name">Name:</label>
-              <input type="text" id="name" name="name" placeholder="Enter your name..." required>
-              <label for="email">Email:</label>
-              <input type="email" id="email" name="email" placeholder="Enter your email..." required>
-              <label for="subject">Subject:</label>
-              <textarea name="subject" id="subject" cols="10" rows="10"></textarea>
-              <input type="submit" value="Submit">
-            </form>
-          </div>
+              <div class="boxes">
+                <div>
+                  <span class="text-secondary">Email:</span>
+                  akayaudio@gmail.com
+                </div>
+                <div>
+                  <span class="text-secondary">Phone:</span>
+                  07505412030
+                </div>
+                <div>
+                  <span class="text-secondary">Address:</span>
+                  4 Knowle Terract Leeds LS4 2PA
+                </div>
+              </div>
       </section>
     </main>
 
