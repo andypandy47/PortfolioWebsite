@@ -572,6 +572,16 @@ ul.courses li:hover {
   margin-bottom: 0.5rem;
 }
 
+/***************
+* BACK BUTTON
+****************/
+
+/*#back-button {
+  padding: 1rem;
+  display: inline-block;
+  position: absolute;
+}*/
+
 /****************
 *		TABLET
 ****************/
